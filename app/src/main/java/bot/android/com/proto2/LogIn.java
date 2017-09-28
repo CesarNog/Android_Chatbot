@@ -31,19 +31,19 @@ public class LogIn extends AppCompatActivity {
                 String username = txtUsername.getText().toString();
                 String password = txtPassword.getText().toString();
 
-                if (username.trim().length() > 0
+                /*if (username.trim().length() > 0
                         && password.trim().length() > 0) {
-                    if ((username.equals("chat123") && password.equals("chat123")) {
+                    if ((username.equals("chat123") && password.equals("chat123"))) {*/
                         session.createLoginSession(username);
                         Intent i = new Intent(LogIn.this,MainActivity.class);
                         startActivity(i);
 
-                    } else {
+                    /*} else {
                         Toast.makeText(getApplicationContext(), "Wrong Password or Email", Toast.LENGTH_LONG).show();
                     }
                 } else {
                     Toast.makeText(getApplicationContext(), "Enter Password and Email", Toast.LENGTH_LONG).show();
-                }
+                }*/
 
             }
         });
