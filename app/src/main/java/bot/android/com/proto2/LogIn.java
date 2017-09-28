@@ -33,7 +33,7 @@ public class LogIn extends AppCompatActivity {
 
                 if (username.trim().length() > 0
                         && password.trim().length() > 0) {
-                    if ((username.equals("rahul9056@gmail.com")||username.equals("khushaalchoudhary@gmail.com")) && password.equals("root123")) {
+                    if ((username.equals("chat123") && password.equals("chat123")) {
                         session.createLoginSession(username);
                         Intent i = new Intent(LogIn.this,MainActivity.class);
                         startActivity(i);
